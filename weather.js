@@ -1,9 +1,11 @@
 const weather = document.querySelector(".js-weather");
 const API_KEY = "4ea516b2f0af36cd91c0b3ff48296f51";
 const COORDS = "coords";
+let parseLatitude, parseLongitude;
 
-function getWeather(latitude, longitude) {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`)
+
+function getWeather() {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${parseLatitude}&lon=${parseLongitude}&appid=${API_KEY}&units=metric`)
         .then(function (response) {
             return response.json();
         }).then(function (json) {
@@ -44,7 +46,11 @@ function loadCoords() {
         askForCoords();
     } else {
         const parseCoords = JSON.parse(loadedCords);
-        getWeather(parseCoords.latitude, parseCoords.longitude);
+        parseLatitude = parseCoords.latitude;
+        parseLongitude = parseCoords.longitude;
+        //getWeather(parseCoords.latitude, parseCoords.longitude);
+        getWeather();
+        setInterval(getWeather,60000);
     }
 }
 
