@@ -19,6 +19,16 @@ li{
     color: white;
 }
 
+.js-clock{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: 10em;
+    width: 30em;
+    margin: -5em 0 0 -15em;
+    text-align: center;
+}
+
 .js-grettings{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 3em;
@@ -37,15 +47,6 @@ li{
 
 .js-toDoList{
     text-align: center;
-}
-
-.js-clock{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    height: 10em;
-    width: 30em;
-    margin: -5em 0 0 -15em;
 }
 
 .js-weather{
