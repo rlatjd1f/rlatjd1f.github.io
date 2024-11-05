@@ -5,7 +5,7 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
-      title: 'Bridgetec',
+      title: '브리지텍',
       position: 'Backend Developer',
       startedAt: '2020-02',
       descriptions: [
@@ -31,7 +31,7 @@ const experience: IExperience.Payload = {
       ],
     },
     {
-      title: 'Neighbor System',
+      title: '네이버 시스템',
       position: '백엔드 개발, 프론트엔드 개발',
       startedAt: '2017-12',
       endedAt: '2020-02',
