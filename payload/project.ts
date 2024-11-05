@@ -33,8 +33,7 @@ const project: IProject.Payload = {
             'Spring Boot 기반으로 대량의 통계데이터를 Kafka와 연동하는 SSE 백엔드 서버를 개발 및 클라우드에 상용화',
         },
         {
-          content:
-            'NCP KMS에 연동하여 데이터 암복호화 서비스를 제공하는 백엔드 서버를 개발',
+          content: 'NCP KMS에 연동하여 데이터 암복호화 서비스를 제공하는 백엔드 서버를 개발',
         },
         {
           content:
@@ -53,8 +52,7 @@ const project: IProject.Payload = {
             'C# WPF 활용하여 각 지방청의 교통사고 보고서를 통일된 양식으로 작성할 수 있는 운영 단말 개발',
         },
         {
-          content:
-            '경찰청에서 이를 분석하여 DB에 저장 및 통계 관리를 할 수 있는 시스템을 구축',
+          content: '경찰청에서 이를 분석하여 DB에 저장 및 통계 관리를 할 수 있는 시스템을 구축',
         },
         {
           content:
