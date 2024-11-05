@@ -3,7 +3,7 @@ import { faEnvelope, faPhone, faBlog } from '@fortawesome/free-solid-svg-icons';
 
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { IProfile } from '../component/profile/IProfile';
-import image from '../asset/sample_tux.png';
+import image from '../asset/profile.png';
 
 const profile: IProfile.Payload = {
   disable: false,
