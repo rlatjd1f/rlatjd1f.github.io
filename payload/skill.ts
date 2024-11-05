@@ -4,7 +4,15 @@ const programmingLanguages: ISkill.Skill = {
   category: 'Programming Languages',
   items: [
     {
-      title: 'C',
+      title: 'Python',
+      level: 3,
+    },
+    {
+      title: 'Java',
+      level: 2,
+    },
+    {
+      title: 'C++',
       level: 3,
     },
     {
@@ -12,19 +20,11 @@ const programmingLanguages: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Python',
-      level: 3,
-    },
-    {
-      title: 'Perl',
+      title: 'HTML/CSS',
       level: 2,
     },
     {
-      title: 'Golang',
-      level: 2,
-    },
-    {
-      title: 'Rust',
+      title: 'JS',
       level: 1,
     },
   ],
