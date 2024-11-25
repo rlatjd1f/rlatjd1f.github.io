@@ -88,9 +88,43 @@ const Database: ISkill.Skill = {
   ],
 };
 
+const OpenSource: ISkill.Skill = {
+  category: 'Open Source',
+  items: [
+    {
+      title: 'Prometheus',
+      level: 2,
+    },
+    {
+      title: 'Grafana',
+      level: 2,
+    },
+    {
+      title: 'Loki',
+      level: 2,
+    },
+    {
+      title: 'Promtail',
+      level: 2,
+    },
+    {
+      title: 'Kafka',
+      level: 1,
+    },
+    {
+      title: 'fluent-bit',
+      level: 1,
+    },
+    {
+      title: 'jaeger',
+      level: 1,
+    },
+  ],
+};
+
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [programmingLanguages, Framework, Infrastructure, Database],
+  skills: [programmingLanguages, Framework, Infrastructure, Database, OpenSource],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 

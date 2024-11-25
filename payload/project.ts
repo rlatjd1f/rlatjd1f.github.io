@@ -13,9 +13,14 @@ const project: IProject.Payload = {
           content: 'Spring Batch 기반 고객 특성 데이터 수집 및 집계 백엔드 서버 개발',
           weight: 'MEDIUM',
           descriptions: [
-            { content: 'Spring Batch 를 활용해 고객 특성 데이터를 효율적으로 수집 및 집계하는 백엔드 시스템 구현' },
+            {
+              content:
+                'Spring Batch 를 활용해 고객 특성 데이터를 효율적으로 수집 및 집계하는 백엔드 시스템 구현',
+            },
             { content: '고객별 특성 데이터를 저장하기 위한 데이터베이스 스키마 설계 및 최적화' },
-            { content: '세그먼트 항목에 따라 고객 데이터를 집계하고 분석할 수 있는 처리 로직 개발' },
+            {
+              content: '세그먼트 항목에 따라 고객 데이터를 집계하고 분석할 수 있는 처리 로직 개발',
+            },
           ],
         },
       ],
