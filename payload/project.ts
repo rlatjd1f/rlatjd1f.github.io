@@ -4,6 +4,82 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: '고객 데이터 기반 세그먼트 집계 백엔드 서버 개발',
+      startedAt: '2024-01',
+      endedAt: '2024-07',
+      where: '브리지텍',
+      descriptions: [
+        {
+          content: 'Spring Batch 기반 고객 특성 데이터 수집 및 집계 백엔드 서버 개발',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: 'Spring Batch 를 활용해 고객 특성 데이터를 효율적으로 수집 및 집계하는 백엔드 시스템 구현' },
+            { content: '고객별 특성 데이터를 저장하기 위한 데이터베이스 스키마 설계 및 최적화' },
+            { content: '세그먼트 항목에 따라 고객 데이터를 집계하고 분석할 수 있는 처리 로직 개발' },
+          ],
+        },
+      ],
+    },
+    {
+      title: '콜센터 시스템 클라우드화 프로젝트 개발 및 유지보수',
+      startedAt: '2021-06',
+      where: '브리지텍',
+      descriptions: [
+        {
+          content: 'Kafka 연동하는 통계데이터, 장애로그 감시 처리용 SSE 백엔드 서버를 개발',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: 'Kafka 연동 SSE (Server-Sent Events) 기반의 데이터 전송 서버 개발' },
+            { content: '장애로그 파싱을위해 각 팀 수십개의 컨테이너에 대한 통합 로그포맷 설정' },
+          ],
+        },
+        {
+          content: 'NCP KMS 연동 데이터 암복호화 서비스 제공 백엔드 서버 개발',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: 'NCP KMS 데이터키의 주기적인 로테이션과 버전관리 기능 개발 ' },
+            { content: '멀티 테넌트를 위한 테넌트별 데이터키 발급 및 관리를 위한 서비스 개발' },
+          ],
+        },
+        {
+          content: '오픈소스를 활용하여 클라우드 전반적인 모니터링 시스템을 구축',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                'Prometheus, Grafana, node-exporter, redis-exporter 등 오픈소스를 활용한 리소스 모니터링 시스템 구축',
+            },
+            {
+              content:
+                'Loki, Promtail, fluent-bit, Kafka 등 오픈소스를 활용한 로그수집 및 모니터링 시스템 구축',
+            },
+            {
+              content:
+                'Jaeger, Elasticsearch, Kibana 등 오픈소스를 활용한 트레이싱 및 로그 시각화 시스템 구축',
+            },
+          ],
+        },
+        {
+          content: 'Elasticsearch 연동 접속이력 처리 백엔드 서버 개발',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content:
+                'Elasticsearch의 Index와 Alias 개념을 활용하여 멀티 테넌트 환경을 설계하고 구현',
+            },
+            {
+              content:
+                '각 테넌트별 독립적인 데이터 처리를 지원하는 Alias 관리와 데이터 보존 기간 정책에 따른 주기적인 자동 삭제 기능 개발',
+            },
+            {
+              content:
+                '대량의 사용자 접속 이력을 효율적으로 처리하고 검색할 수 있는 백엔드 시스템 구축',
+            },
+          ],
+        },
+      ],
+    },
+    {
       title: '콜센터 데이터 처리 서버 유지보수 및 개선',
       startedAt: '2020-02',
       where: '브리지텍',
@@ -40,48 +116,6 @@ const project: IProject.Payload = {
                 '레거시 C++ 기반 백엔드 서버의 유지보수성 향상과 개선을 위해 Java 17 & Spring Boot 프레임워크를 활용하여 리팩토링 작업을 수행',
             },
             { content: '제품화를 위한 설치, 패키징 쉘 스크립트 구현 및 배포' },
-          ],
-        },
-      ],
-    },
-    {
-      title: '콜센터 시스템 클라우드화 프로젝트 진행',
-      startedAt: '2021-06',
-      endedAt: '2022-12',
-      where: '브리지텍',
-      descriptions: [
-        {
-          content: 'Kafka 연동하는 통계데이터, 장애로그 감시 처리용 SSE 백엔드 서버를 개발',
-          weight: 'MEDIUM',
-          descriptions: [
-            { content: 'Kafka 연동 SSE (Server-Sent Events) 기반의 데이터 전송 서버 개발' },
-            { content: '장애로그 파싱을위해 각 팀 수십개의 컨테이너에 대한 통합 로그포맷 설정' },
-          ],
-        },
-        {
-          content: 'NCP KMS 연동 데이터 암복호화 서비스 제공 백엔드 서버 개발',
-          weight: 'MEDIUM',
-          descriptions: [
-            { content: 'NCP KMS 데이터키의 주기적인 로테이션과 버전관리 기능 개발 ' },
-            { content: '멀티 테넌트를 위한 테넌트별 데이터키 발급 및 관리를 위한 서비스 개발' },
-          ],
-        },
-        {
-          content: '오픈소스를 활용하여 클라우드 전반적인 모니터링 시스템을 구축',
-          weight: 'MEDIUM',
-          descriptions: [
-            {
-              content:
-                'Prometheus, Grafana, node-exporter, redis-exporter 등 오픈소스를 활용한 리소스 모니터링 시스템 구축',
-            },
-            {
-              content:
-                'Loki, Promtail, fluent-bit, Kafka 등 오픈소스를 활용한 로그수집 및 모니터링 시스템 구축',
-            },
-            {
-              content:
-                'Jaeger, Elasticsearch, Kibana 등 오픈소스를 활용한 트레이싱 및 로그 시각화 시스템 구축',
-            },
           ],
         },
       ],
