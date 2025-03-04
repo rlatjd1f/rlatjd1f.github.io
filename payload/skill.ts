@@ -13,19 +13,19 @@ const programmingLanguages: ISkill.Skill = {
     },
     {
       title: 'C++',
-      level: 2,
+      level: 3,
     },
     {
       title: 'Shell Scripting',
-      level: 2,
+      level: 3,
     },
     {
       title: 'HTML/CSS',
-      level: 1,
+      level: 2,
     },
     {
       title: 'JS',
-      level: 1,
+      level: 2,
     },
   ],
 };
@@ -92,39 +92,59 @@ const OpenSource: ISkill.Skill = {
   category: 'Open Source',
   items: [
     {
+      title: 'Vault',
+    },
+    {
       title: 'Prometheus',
-      level: 2,
     },
     {
       title: 'Grafana',
-      level: 2,
     },
     {
       title: 'Loki',
-      level: 2,
     },
     {
       title: 'Promtail',
-      level: 2,
     },
     {
       title: 'Kafka',
-      level: 1,
     },
     {
       title: 'fluent-bit',
-      level: 1,
     },
     {
       title: 'jaeger',
-      level: 1,
+    },
+  ],
+};
+
+const Tools: ISkill.Skill = {
+  category: 'Tools',
+  items: [
+    {
+      title: 'Git',
+    },
+    {
+      title: 'GitLab',
+    },
+    {
+      title: 'Jira',
+    },
+    {
+      title: 'Intellij IDEA',
+    },
+    {
+      title: 'Copilot',
+    },
+    {
+      title: 'Jenkins',
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [programmingLanguages, Framework, Infrastructure, Database, OpenSource],
+  skills: [programmingLanguages, Framework, Infrastructure, Database, OpenSource, Tools],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 

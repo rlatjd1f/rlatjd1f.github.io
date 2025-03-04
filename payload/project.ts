@@ -4,46 +4,40 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
-      title: '고객 데이터 기반 세그먼트 집계 백엔드 서버 개발',
-      startedAt: '2024-01',
-      endedAt: '2024-07',
-      where: '브리지텍',
-      descriptions: [
-        {
-          content: 'Spring Batch 기반 고객 특성 데이터 수집 및 집계 백엔드 서버 개발',
-          weight: 'MEDIUM',
-          descriptions: [
-            {
-              content:
-                'Spring Batch 를 활용해 고객 특성 데이터를 효율적으로 수집 및 집계하는 백엔드 시스템 구현',
-            },
-            { content: '고객별 특성 데이터를 저장하기 위한 데이터베이스 스키마 설계 및 최적화' },
-            {
-              content: '세그먼트 항목에 따라 고객 데이터를 집계하고 분석할 수 있는 처리 로직 개발',
-            },
-          ],
-        },
-      ],
-    },
-    {
       title: '콜센터 시스템 클라우드화 프로젝트 개발 및 유지보수',
       startedAt: '2021-06',
       where: '브리지텍',
       descriptions: [
         {
-          content: 'Kafka 연동하는 통계데이터, 장애로그 감시 처리용 SSE 백엔드 서버를 개발',
+          content: '실시간 모니터링 데이터 처리 SSE 백엔드 서버 개발',
           weight: 'MEDIUM',
           descriptions: [
-            { content: 'Kafka 연동 SSE (Server-Sent Events) 기반의 데이터 전송 서버 개발' },
-            { content: '장애로그 파싱을위해 각 팀 수십개의 컨테이너에 대한 통합 로그포맷 설정' },
+            {
+              content:
+                'Kafka 특정 토픽에서 실시간 메시지를 컨슘하여 SSE(Server-Sent Events)를 활용한 실시간 데이터 스트리밍 서비스 구축',
+            },
+            {
+              content:
+                '클라이언트 요청 시 필요한 데이터만 파싱하여 전송하는 방식으로 불필요한 데이터 처리 최소화 및 성능 최적화',
+            },
           ],
         },
         {
-          content: 'NCP KMS 연동 데이터 암복호화 서비스 제공 백엔드 서버 개발',
+          content: 'KMS(Key Management System) 서비스 백엔드 서버 개발',
           weight: 'MEDIUM',
           descriptions: [
-            { content: 'NCP KMS 데이터키의 주기적인 로테이션과 버전관리 기능 개발 ' },
-            { content: '멀티 테넌트를 위한 테넌트별 데이터키 발급 및 관리를 위한 서비스 개발' },
+            {
+              content:
+                'NCP(Naver Cloud Platform) KMS 연동을 통해 데이터키 암복호화 관리 백엔드 서버 개발',
+            },
+            {
+              content:
+                'KMS의 마스터키를 활용하여 테넌트별 암호화된 데이터키 생성 및 RDBMS 저장 기능 구현',
+            },
+            {
+              content:
+                '클라우드 테스트 환경에서는 HashiCorp Vault Transit 기능을 활용한 마스터키-데이터키 구조 적용',
+            },
           ],
         },
         {
@@ -52,33 +46,35 @@ const project: IProject.Payload = {
           descriptions: [
             {
               content:
-                'Prometheus, Grafana, node-exporter, redis-exporter 등 오픈소스를 활용한 리소스 모니터링 시스템 구축',
+                '다양한 오픈소스 툴(Prometheus, Grafana 등)을 활용하여 클라우드 인프라의 리소스 모니터링 시스템 구축',
             },
             {
               content:
-                'Loki, Promtail, fluent-bit, Kafka 등 오픈소스를 활용한 로그수집 및 모니터링 시스템 구축',
+                'Loki, Promtail, Fluent Bit, Kafka를 통한 로그 수집 및 중앙 집중형 모니터링 시스템 구현',
             },
             {
-              content:
-                'Jaeger, Elasticsearch, Kibana 등 오픈소스를 활용한 트레이싱 및 로그 시각화 시스템 구축',
+              content: '오픈소스 기반의 모니터링 솔루션 아키텍처 설계 및 최적화 경험 보유',
+            },
+            {
+              content: '오픈소스를 활용한 운영 효율성 및 모니터링 자동화 역량 확보',
             },
           ],
         },
         {
-          content: 'Elasticsearch 연동 접속이력 처리 백엔드 서버 개발',
+          content: 'Elasticsearch 기반 멀티 테넌트 접속 이력 관리 백엔드 개발',
           weight: 'MEDIUM',
           descriptions: [
             {
               content:
-                'Elasticsearch의 Index와 Alias 개념을 활용하여 멀티 테넌트 환경을 설계하고 구현',
+                'Elasticsearch의 Index와 Alias 구조를 활용해 멀티 테넌트 환경을 설계 및 구현',
             },
             {
               content:
-                '각 테넌트별 독립적인 데이터 처리를 지원하는 Alias 관리와 데이터 보존 기간 정책에 따른 주기적인 자동 삭제 기능 개발',
+                '테넌트별 독립적 데이터 격리를 보장하는 Alias 관리 및 데이터 보존 정책 기반의 자동화된 주기적 삭제 기능 개발',
             },
             {
               content:
-                '대량의 사용자 접속 이력을 효율적으로 처리하고 검색할 수 있는 백엔드 시스템 구축',
+                '사용자 웹 접속 이력을 실시간으로 수집, 저장 및 빠른 검색이 가능한 백엔드 시스템 구축',
             },
           ],
         },
@@ -90,37 +86,31 @@ const project: IProject.Payload = {
       where: '브리지텍',
       descriptions: [
         {
-          content: '콜 관련 데이터 처리 백엔드 서버 유지보수 및 개발',
+          content: '콜 데이터 처리 백엔드 서버 유지보수 및 개발',
           weight: 'MEDIUM',
           descriptions: [
-            { content: 'C++ 기반의 콜 데이터 처리용 백엔드 서버 유지보수 및 개선' },
-            { content: '웹 UI 에서 볼수 있도록 RDBMS, Redis 데이터 가공 통계 작업 개발/유지보수' },
-          ],
-        },
-        {
-          content: '통계데이터 처리용 백엔드 서버 성능 개선 및 벌크 처리 방식 도입',
-          weight: 'MEDIUM',
-          descriptions: [
+            { content: 'C++로 개발된 콜 데이터 처리 백엔드 서버 유지보수 및 개선' },
             {
               content:
-                '성능이 낮은 일부 고객사의 DB 서버에서 대용량 통계 데이터 처리 속도가 지연되는 문제를 개선하기 위해, 기존 백엔드 서버의 성능을 분석',
-            },
-            {
-              content:
-                'AS-IS 백엔드 서버의 파일 단위 통계 데이터 단건 처리 방식을, TO-BE 백엔드 서버에서 벌크 처리 방식으로 전환하여 성능을 개선',
+                '프로세스 상태 감시, 콜 관련 모니터링 데이터 수집 및 가공, 콜 관련 통계데이터 수집 서버 개발과 유지보수 진행',
             },
           ],
         },
         {
-          content: '레거시 C++ 기반 백엔드를 Spring Boot & Java17 로 리팩토링',
+          content: 'C++ 백엔드 서버의 Spring Boot(Java) 리팩토링',
           weight: 'MEDIUM',
           descriptions: [
-            { content: '기존 백엔드 서버의 리팩토링을 위해 서버의 주요 비즈니스 로직을 분석' },
             {
               content:
-                '레거시 C++ 기반 백엔드 서버의 유지보수성 향상과 개선을 위해 Java 17 & Spring Boot 프레임워크를 활용하여 리팩토링 작업을 수행',
+                '기존 C++ 코드의 복잡성과 기술 부채로 인해 유지보수가 어려웠던 시스템을 Java(Spring Boot)로 마이그레이션',
             },
-            { content: '제품화를 위한 설치, 패키징 쉘 스크립트 구현 및 배포' },
+            {
+              content:
+                'JVM 기반의 다양한 라이브러리(Spring, Hibernate 등)를 활용하여 개발 생산성 및 협업 효율성 증대',
+            },
+            {
+              content: '메모리 관리(GC) 및 멀티스레딩 안정성을 확보하여 장애율 감소',
+            },
           ],
         },
       ],
